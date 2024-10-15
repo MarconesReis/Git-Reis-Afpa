@@ -9,7 +9,7 @@ Opérateur   Défintinition
 <=          permet de tester si une valeur est strictement inférieure ou égale à un autre
 >=          permtn de tester si une valeur est strictement supérieure ou égale à aun autre    
 */
-.actuality_content .actuality_link, .nav_list .nav_link {
+.footer_link .link_admin, .actuality_content .actuality_link, .nav_list .nav_link {
   text-decoration: none;
   color: #000;
   padding: 0.75rem;
@@ -133,4 +133,26 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.footer_reseaux {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.reseaux_icones {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.footer_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer_link .link_admin:hover {
+  color: rgb(112, 112, 112);
 }/*# sourceMappingURL=style.css.map */
