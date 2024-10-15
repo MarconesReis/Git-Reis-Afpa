@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.text_box, .warning, .info {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 5px solid #ddd;
+  box-sizing: border-box; /*ça remet les bordures à l'intériéure de la boite*/
+}
+
+.info {
+  background-color: lightblue;
+}
+
+.warning {
+  background-color: lightcoral;
+}/*# sourceMappingURL=style.css.map */
+
+/* L'héritage permet d'organiser son code dfférement en groupant les rèlges plutôt que les sélecters puis utiliser @extend pour pargager cet esnsemble de propriéttésq avec d'atres sélecteurs 
+
+Le sélecteur placehoder %permet de créer un ensemble de règless qui n'apparitront pas dans la sortie CSS (dans le rendu final) qui si il est éntendu avec @extend. */

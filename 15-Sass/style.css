@@ -1,0 +1,19 @@
+@charset "UTF-8";
+.list {
+  list-style: none;
+}
+.list:hover {
+  background-color: lightblue;
+}
+.list .list_item {
+  color: red;
+}
+.list .list_item:hover {
+  background-color: lightcoral;
+}
+
+/*
+Sass propose une le moyen d'imbriquer les éléments, cel pemet une meilleure organisations et lisibilité du code Css dans sont ensemble
+
+Le sélécteur paret Sass & est un sélécteur spécial inveté pa  Sass qui est utilisé dans les sélecteurs imbriqué pour faire référrence au selecteur extérieur
+*//*# sourceMappingURL=style.css.map */

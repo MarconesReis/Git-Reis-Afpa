@@ -1,0 +1,76 @@
+.container{
+    width: 1200px;
+}
+.menu{
+    background: purple;
+    height: 80px;
+}
+.word{
+    color: #fff;
+}
+.navigation{
+    background: yellow;
+    height: 30px;
+}
+.main_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.squares{
+    width: 240px;
+    height: 240px;
+    font-size: 40px;
+    color: rgb(92, 92, 28);
+}
+.sq_a, .sq_m, .sq_i{
+    background: red;
+}
+.sq_b, .sq_n{
+    background: blue;
+}
+.sq_c, .sq_o{
+    background: green;
+}
+.sq_d, .sq_r{
+    background: purple;
+}
+.sq_e{
+    background: yellow;
+}
+.sq_f{
+    background: black;
+}
+.sq_g{
+    background: rgb(48, 45, 45);
+}
+.sq_h{
+    background: rgb(92, 90, 90);
+}
+.sq_k{
+    background: rgb(78, 75, 75);
+}
+.sq_l{
+    background: rgb(158, 154, 154);
+}
+.sq_j{
+    background: rgb(114, 112, 112);
+}
+.sq_p{
+    background: rgb(83, 117, 83);
+}
+.sq_q{
+    background: rgb(108, 184, 108);
+}
+.sq_s{
+    background: rgba(153, 76, 76, 0.836);
+}
+.sq_t{
+    background: rgb(21, 180, 21);
+}
+.footer_content{
+    background: red;
+    height: 70px;
+}
+
+
+

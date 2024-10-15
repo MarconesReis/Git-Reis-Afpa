@@ -1,0 +1,300 @@
+@import url(reset.css);
+@import url(variable.css);
+@import url(nav.css);
+@import url(footer.css);
+
+@font-face {
+    font-family: 'space_grotesklight';
+    src: url('../assets/fonts/spacegrotesk-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../assets/fonts/spacegrotesk-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+
+    /*************** CSS General ***************/
+
+html, body{
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+
+/*************** CSS HEADER ***************/
+
+.header{
+    height: var(--max-height-header);
+    background: #000 url(../assets/banners/banner-home.jpg);
+    background-size: cover;
+}
+
+.header_title{
+    font-size: var(--font-size-h1);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-xl);
+    color: var(--text-color-primary-white);
+    letter-spacing: var(--spacing-xs);
+    text-align: center;
+}
+
+.header_link_decouvrir{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: var(--font-weight-xl);
+    color: var(--text-color-primary-white);
+}
+
+.header_block_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 48px;
+    margin-top: calc(var(--max-height-header) / 2);
+}
+
+/*************** CSS MAIN ****************/
+
+.main{
+    padding: 64px;
+}
+
+.chambres, .restaurant, .hotels{
+    margin-bottom: 64px;
+}
+
+.chambre_title, .restaurant_title, .balade_title{
+    font-size: var(--font-size-sutitle);
+    font-weight: var(--font-weight-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.chambres_content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--spacing-xl);
+}
+
+.chambre_picture{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-md);
+}
+
+.chambre_card_link{
+    text-decoration: none;
+    color: var(--text-color-primary-white);
+}
+
+.chambre_card{
+    position: relative;
+}
+
+.chambre_card_title{
+    color: var(--text-color-primary-dark);
+    font-size: var(--font-size-sutitle);
+    font-weight: var(--font-weight-xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.chambre_card_content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: var(--spacing-md) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(203, 192, 192, .04);
+    width: 100%;
+}
+
+.btn{
+    background: var(--bg-bth);
+    color: var(--text-color-primary-white);
+    text-decoration: none;
+    padding: var(--spacing-xs);
+    width: 100px;
+    text-align: center;
+    border-radius: var(--radius-md);
+    font-weight: var(--font-weight-xl);
+}
+
+.restaurant, .hotels, .balades{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    column-gap: 64px;
+}
+
+.restaurant_content, .hotel_content, .balade_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: var(--spacing-md);
+}
+
+.restaurant_block_pictures{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 220px auto;
+    gap: var(--spacing-xxl);
+}
+
+.restaurant_picture1{
+    grid-column: 1 / 7;
+}
+
+.restaurant_picture2{
+    grid-column: 1 / 3;
+}
+
+.restaurant_picture3{
+    grid-column: 3 / 7;
+}
+
+.restaurant_picture_item1{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-md);
+}
+
+.restaurant_picture_item2{
+    object-fit: cover;
+    width: 100%;
+    height: 180px;
+    border-radius: var(--radius-md);
+}
+
+.restaurant_picture_item3{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: var(--radius-md);
+}
+
+.hotel_picture_item, .balade_picture_item{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: var(--spacing-md);
+}
+/* ********** CSS Main ********* */
+
+@media screen and (max-width: 1024px) {
+    .header__nav{
+        padding: 0 1rem;
+    }
+
+    .main{
+        padding: 64px 0;
+    }
+
+    .chambres_content{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 250px;
+        row-gap: 2rem;
+    }
+
+    .chambre_card:last-child{
+        grid-column: 1 / 3;
+    }
+
+    .chambre_picture:last-child{
+        object-fit: cover; /* faire qui l'image soit toujours proportionnel malgré le chagement de taille */
+    }
+
+    .restaurant, .hotels, .balades{
+        grid-template-columns: 1fr;
+        row-gap: 2rem;   
+        padding: 0 1rem;
+    }
+
+    .restaurant_title, .hotel_title, .balade_title{
+        margin-bottom: 0.75rem;
+    }
+
+    .hotels{
+        background: lightgrey;
+        padding: 2rem 1rem;
+    }
+
+    .hotels_content{
+        order: 1;
+    }
+
+    .hotel_block_pictures{
+        order: 2;
+    }
+
+    .hotel_picture_item{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .header{
+        height: 500px;
+    }
+    
+    .header__nav{
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .link_logo{
+        margin-bottom: 1rem;
+    }
+
+    .nav__list{
+        flex-direction: column;
+        row-gap: 0.5rem;
+        text-align: center;
+    }
+
+    .nav__link{
+        margin-left: 0;
+    }
+
+    .header_block_title{
+        margin-top: 50px;
+        row-gap: 12px;
+    }
+
+    .hotel_picture_item, .balade__picture__item{
+        height: 300px;
+    }
+
+    .header_block_title{
+        margin-top: 50px;
+        row-gap: 1rem;
+    }
+    .footer{
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        margin: auto;
+    }
+
+    .footer_address, .footer_nav_link  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_reseaux{
+        margin: 25px auto
+    }
+
+    .footer_informations, .footer_nav_link, .footer_content{
+        width: 100%;
+        align-items: center;
+    }  
+
+    .footer_nav_link{
+        margin: 2px auto
+    }
+
+}

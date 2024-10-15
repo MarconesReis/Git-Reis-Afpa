@@ -1,0 +1,46 @@
+.container{
+    width: 1200px;
+}
+.menu{
+    background: greenyellow;
+    height: 100px;
+}
+.onglet, .link_footer, .word{
+    font-weight: bold;
+}
+.menu_navigation{
+    list-style-type: none; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: wheat;
+    height: 50px;
+    margin: 0;
+}
+.left_footer, .midlle_footer, .right_footer{
+    margin: 0;
+    width: 400px;
+}
+.main_container{
+    display: flex;
+}
+.left_aside, .right_aside{
+    width: 200px;
+    height: 300px;
+}
+.midlle{
+    width: 800px;
+    background: rgb(86, 205, 235);
+}
+.left_aside{
+    background: yellow;
+}
+.right_aside{
+    background: rgb(202, 128, 140);
+}
+.footer_container{
+    display: flex;
+    margin: 0;
+    height: 100px;
+    background: rgb(192, 189, 230);
+}

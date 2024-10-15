@@ -1,0 +1,50 @@
+.container{
+    width: 1200px;
+}
+.span{
+    font-size: 40px;
+    color: rgb(110, 110, 46);
+}
+.topbar{
+    margin: 0;
+}
+.menu1{
+    margin: 0;
+}
+.title{
+    margin: 0;
+}
+.menu1{
+    background: violet;
+    height: 80px;
+    color: #fff;
+}
+.nav{
+    background: yellow;
+    margin-top: 0px;
+    height: 35px;
+}
+.main{
+    display: flex;
+    height: 640px;
+}
+.left{
+    background: red;
+    width: 300px;
+}
+.midlle{
+    background: blue;
+    width: 600px;
+}
+.right{
+    background: red;
+    width: 300px;
+}
+.footer{
+    background: rgb(143, 14, 14);
+    height: 60px;
+}
+.span_footer{
+    color: #fff;
+    padding-top: 10px;
+}

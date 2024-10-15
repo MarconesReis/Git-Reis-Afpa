@@ -1,0 +1,37 @@
+/* On selecione l'ensemble des balises <p> du document*/
+p {
+    color: red;
+}
+p:first-child {
+    color: blue;
+}p:last-child {
+    color: aquamarine;
+}
+/* Element pairs(even) */
+p:nth-child(even ) {
+    color: cadetblue;
+}
+
+/* Element odd (inpairs) */
+p:nth-child(odd ) {
+    color: red;
+}
+
+p:nth-child(5), p:nth-child(6 ),p:nth-child(7) {
+    color: black;
+}
+.zoneA {
+    color: chartreuse;
+}
+/* Il est possible d'affecter plusierus classe à un élément html */
+.background_color {
+    background: black;
+}
+#zoneC {
+    color: blueviolet;
+}
+/* Sélectioné l'élément à l'interieur de l'élément possédent l'id    */
+#zoneD span{
+    color: red;
+}
+/* L'utilisation des childs n'est pas trés rassurant dans le cas pù le code html serait amené à évoluer. IL est préferable de favoriser les classes */

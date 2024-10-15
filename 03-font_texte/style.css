@@ -1,0 +1,48 @@
+@import url(../02-Selecteurs-heritage/02-heritage/reset.css);
+
+
+/* 2 méthodes pour importer des fonts : 
+    -importer via des URL de google fonts
+    - En téléchargeant le fichier ttf de font sur google fonts, ensuite
+    se rendre sur le site quirrel : https://www.fontsquirrel.com/tools/webfont-generator ,uploader le fichierr ggf et créer votre dit. Dans le dit nous trouvons le code CSS ci-desssous ainsi que les formats woff et woff2. Pensez à bien lier les fichiers dans la porpriété 'src' (source= de @font-face */
+@font-face {
+    font-family: 'robotoblack';
+    src: url('fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.title_h1 {
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    width: 300px;
+    margin: 20px auto;
+    background: gray;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+body {
+    font-family: 'robotoblack';
+}
+.button_link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #000;
+    padding: 2rem;
+    border-radius: 3rem;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 150px;
+}
+.home{
+    display: flex;
+}
+

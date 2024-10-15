@@ -1,0 +1,42 @@
+/* : mettre une couleur de texte et une couleur de fond aux éléments html déclarés dans le fichier index.html */
+
+@import url(reset.css);
+
+.title_h1 {
+    color: white;
+    background: black;
+    /* Alignement horizontal du texte */
+    text-align: center;
+    /* largeur de l'élément */
+    width: 300px;
+    margin: 20px 16px 32px 64px;
+}
+
+.paragraphe {
+    color: black;
+    background: yellow;
+}
+
+.span {
+    color: violet;
+    background: blue;
+    padding: 24px 36px;
+    display: inline-block;
+}
+
+.block {
+    color: aqua;
+    background: orangered;
+}
+
+.button_link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #000;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+.home{
+    display: flex;
+}

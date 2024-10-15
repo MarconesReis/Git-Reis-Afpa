@@ -1,0 +1,11 @@
+@import url(../02-Selecteurs-heritage/02-heritage/reset.css);
+
+.container{
+    width: 1440px;
+    margin: 50px auto;
+}
+
+th, td{
+    border: 1px solid #000000;
+    padding: 20px;
+}

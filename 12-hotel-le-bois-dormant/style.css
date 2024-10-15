@@ -1,0 +1,52 @@
+.container{
+    width: 1440px;
+    border: solid 1px;
+    margin: 0;
+}
+.menu{
+    height: 495px;
+    background: rgba(0, 0, 0, 0.466);   
+}
+.presentation{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+}
+.restaurant, .hotel, .forest{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 150px;
+}
+.squares{
+    height: 495px;
+    width: 422px;
+    background: gray;
+    margin: 10px;
+}
+
+.text_restaurant, .img_restaurant, .img_hotel, .text_hotel, .text_forest, .img_forest{
+    width: 546px;
+    height: 537px;
+    background: gray;
+}
+.footer_container{
+    height: 430px;
+    background: gray;
+}
+ 
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .header__nav{
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .link_logo{
+        margin-bottom: 1rem;
+    }
+}

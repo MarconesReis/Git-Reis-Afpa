@@ -1,0 +1,89 @@
+@import url(../02-Selecteurs-heritage/02-heritage/reset.css);
+html, body{
+    font-size: 16px;
+}
+.header, .footer{
+    min-height: 150px;
+    display: flex;
+}
+
+.content_left, .content_right{
+    flex-grow:  1;
+}
+
+.content_left{
+    background: lightcoral;
+}
+
+.content_right{
+    background: lightgray;
+}
+
+.nav{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #000;
+}
+.nav_link{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.section1, .section2, .section3{
+    min-height: 200px;
+    display: flex;
+}
+
+.block1, .block3{
+    width: 25%;
+    background: aqua;
+}
+.block2{
+    width: 50%;
+    background: lemonchiffon;
+}
+
+.section2{
+    background: lightgreen;
+}
+
+/* MEDIA QUERIES */
+
+/* Desktop */
+@media screen and (max-width: 1024px) {
+    .container{
+        width: 100%;
+    }
+}
+
+
+/* tablette et smartphone */
+@media screen and (max-width: 768px) {
+
+    .header, .footer{
+        flex-direction: column;
+    }
+
+    .nav{
+        flex-direction: column;
+        padding: 1rem 0;
+        row-gap: 0.5rem;
+        background: green;
+    }
+
+    .section1, .section3{
+        flex-direction: column;
+    }
+
+    .block1, .block2, .block3{
+        width: 100%;
+        min-height: 150px;
+    }
+}

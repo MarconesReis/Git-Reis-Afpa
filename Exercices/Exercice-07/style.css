@@ -1,0 +1,35 @@
+.container{
+    width: 1200px;
+}
+.menu{
+    background: purple;
+    height: 70px;
+}
+.word{
+    color: #fff;
+}
+.navigation{
+    background: yellow;
+    height: 35px;
+}
+.main_content{
+    display: fl
+}
+.left_up{
+    display: block;
+    background: red;
+    height: 120px;
+    width: 120px;
+}
+.letter_a{
+    font-size: 40px;
+    color: rgb(102, 102, 28);
+}
+.page_center{
+    height: 600px;
+    background: rgb(14, 148, 172);
+}
+.footer_content{
+    background-color: red;
+    height: 70px;
+}

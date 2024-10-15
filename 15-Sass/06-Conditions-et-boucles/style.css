@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.block_lion {
+  width: 200px;
+  height: 200px;
+  background: url(img/lion.jpeg) no-repeat;
+}
+
+.block_ours {
+  width: 200px;
+  height: 200px;
+  background: url(img/ours.jpeg) no-repeat;
+}
+
+.block_chameau {
+  width: 200px;
+  height: 200px;
+  background: url(img/chameau.jpeg) no-repeat;
+}
+
+/*
+Les boucles permet de rpéter une acction en fonction d'une condition. DAns les parenthèses  de la boucle @while, nous exprimons une condition. Dans les parenthèses de lab boucle @while, nous exprimons une conditions. Tant que la valeur de lavariable $margin est strictemnet inféreur à 20 ($width/50), tant que cette condtition retoune TRUE, qu'elle est vrai, la boucle continue de tourner, entre les accolades, ce sont lesinstuctions données à la boucl, dici on incrémnent ( on ajoutte +1) à la varable $margin pour chaque tour de boudle
+*/
+body {
+  margin: 20px;
+}/*# sourceMappingURL=style.css.map */

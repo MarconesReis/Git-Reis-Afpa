@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- border border-dark équivaut à border: 1px solid black; -->
+    <!-- p-0 équivaut à padding: 0; -->
+    <div class="container border border-dark p-0">
+      <!-- text-center : class boostrap équivaut à text-align: center -->
+      <!-- mt-3 équivaut à margin-top en CSS -->
+      <h1 class="text-center mt-3">Bootstrap</h1>
+
+      <h2 class="text-center">Grille</h2>
+
+      <!-- py-4 équivaut à padding: 1.5rem 0; -->
+      <!-- bg-danger équivaut à background-color: red; -->
+      <div class="py-4 bg-danger col-12 col-lg-6 mb-2"></div>
+
+      <div
+        class="py-4 bg-success col-12 col-sm-8 col-md-4 col-lg-10 col-xl-5 mb-2"
+      ></div>
+
+      <!-- 
+            Boostrap fonctionne avec un système de 12 colonnes en fonction de l'élément parent, à chaque que l'on imbrique des éléments html, l'élément parent dispose d'une grille de 12 colonnes 
+        -->
+      <div class="py-4 bg-warning mb-2 col-8 mb-2">
+        <div class="bg-primary py-3 col-6">
+          <div class="bg-success py-3 col-6"></div>
+        </div>
+      </div>
+
+      <!-- 
+        la classe est par défaut display: flex, donc si les éléments sur la ligne prennent au maximum 12 colonnes en largeur, ils seront sur la même ligne
+        Si l'espace des 12 colonnes est insuffisant, les éléments se positionnent en dessous automatiquement, donc identique au flex-wrap: wrap
+        -->
+      <div class="row m-0">
+        <div class="col-8 py-4 bg-primary"></div>
+        <div class="col-4 py-4 bg-danger"></div>
+        <div class="col-12 py-4 bg-warning"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="text-center my-3">FlexBox</h2>
+
+      <!-- 
+        d-flex équivaut à display: flex 
+        justify-content-end équivaut à justify-content: flex-end;
+        justify-content-center équivaut à justify-content: center;
+        justify-content-between équivaut à justify-content: space-between;
+        justify-content-evenly équivaut à justify-content: space-evenly;
+        justify-content-around équivaut à justify-content: space-around;
+      -->
+      <div class="d-flex border border-dark mb-3 justify-content-end">
+        <div class="bg-danger p-2">Item1</div>
+        <div class="bg-success p-2">Item2</div>
+        <div class="bg-warning p-2">Item3</div>
+      </div>
+
+      <div class="d-flex border border-dark mb-3 justify-content-center">
+        <div class="bg-danger p-2">Item1</div>
+        <div class="bg-success p-2">Item2</div>
+        <div class="bg-warning p-2">Item3</div>
+      </div>
+
+      <div class="d-flex border border-dark mb-3 justify-content-between">
+        <div class="bg-danger p-2">Item1</div>
+        <div class="bg-success p-2">Item2</div>
+        <div class="bg-warning p-2">Item3</div>
+      </div>
+
+      <div class="d-flex border border-dark mb-3 justify-content-evenly">
+        <div class="bg-danger p-2">Item1</div>
+        <div class="bg-success p-2">Item2</div>
+        <div class="bg-warning p-2">Item3</div>
+      </div>
+
+      <div class="d-flex border border-dark mb-3 justify-content-around">
+        <div class="bg-danger p-2">Item1</div>
+        <div class="bg-success p-2">Item2</div>
+        <div class="bg-warning p-2">Item3</div>
+      </div>
+
+      <!-- 
+      Positionnement vertical 
+      align-items-center: équivaut à align-items: center
+      align-items-end: équivaut à align-items: end
+      -->
+      <div class="d-flex border border-dark mb-3 align-items-center justify-content-center" style="height: 150px;">
+        <div class="bg-danger p-2" style="height: 50px;">Item1</div>
+        <div class="bg-success p-2" style="height: 50px;">Item2</div>
+        <div class="bg-warning p-2" style="height: 50px;">Item3</div>
+      </div>
+
+      <div class="d-flex border border-dark mb-3 align-items-end justify-content-center" style="height: 150px;">
+        <div class="bg-danger p-2" style="height: 50px;">Item1</div>
+        <div class="bg-success p-2" style="height: 50px;">Item2</div>
+        <div class="bg-warning p-2" style="height: 50px;">Item3</div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

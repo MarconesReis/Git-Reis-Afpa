@@ -1,0 +1,36 @@
+.container{
+    width: 1200px;
+}
+.word, .letter{
+    color: white;
+    font-size: 18px;
+}
+.menu{
+    height: 80px;
+    background: purple;
+}
+.navigation{
+    height: 35px;
+    background: yellow;
+}
+.section_up{
+    height: 450px;
+    background: purple;
+}
+.left_down, .right_down{
+    height: 225px;
+    width: 50%;
+}
+.down{
+    display: flex;
+}
+.left_down{
+    background: red;
+}
+.right_down{
+    background: blue;
+}
+.footer_container{
+    height: 70px;
+    background: rgb(228, 90, 90);
+}

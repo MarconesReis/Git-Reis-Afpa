@@ -1,0 +1,46 @@
+.container{
+    width: 1200px;
+}
+
+.word{
+    color: #fff;
+}
+.item{
+    font-size: 40px;
+    color: rgb(139, 113, 40);
+}
+.menu{
+    background: purple;
+    height: 80px;
+}
+.navegation{
+    background: yellow;
+    height: 35px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left_up{
+    background: red;
+    width: 600px;
+    height: 300px;
+}
+.left_down{
+    background: green;
+    width: 600px;
+    height: 300px;
+}
+.right_up{
+    background: blue;
+    width: 600px;
+    height: 300px;
+}
+.right_down{
+    background: purple;
+    width: 600px;
+    height: 300px;
+}.footer{
+    background: red;
+    height: 70px;
+}

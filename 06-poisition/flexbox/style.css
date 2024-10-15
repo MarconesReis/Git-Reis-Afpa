@@ -1,0 +1,202 @@
+@import url(../../02-Selecteurs-heritage/02-heritage/reset.css);
+
+html, body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+.container{
+    width: 1400px;
+    margin: 50px;
+}
+
+.title_h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.title_h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.section1{
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.section2{
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section3{
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    /* flex-start par defaut */
+}
+
+.section4{
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    /* Les éléments sont repartis uniformement dans le bloc */
+}
+
+.section5{
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+/* Les éléments sont repartis uniformement sur la ligne avec un espace égal autour d'eux, gauche et droite */
+}
+
+.section6{
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    /* Les éléments sont repartis de manière à ce que l'espacement entre deux éléments et l'espace les bords soit égal */
+}
+
+.item {
+    height: 60px;
+    margin-right: 1rem;
+}
+
+.section7{
+    height: 150px;
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section8{
+    height: 150px;
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.section9{
+    height: 150px;
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+    display: flex;
+    align-items: flex-end;
+    /* alignement vertical en bas */
+}
+
+.section10{
+    min-height: 150px;
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px 20px;
+    /* 10px entre chaque ligne d'élements | 20px entre chaque column */
+    
+    row-gap: 40px;
+    /* retour à la ligne automatique  des éléments si l'espace horizontal n'est pas suffisant */
+    
+    column-gap: 100px;
+    /* espace entre chaque colonne */
+}
+
+.section11{
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+    display: flex;
+    column-gap: 10px;
+}
+
+
+
+.item{
+    background-color: aqua;
+    height: 60px;
+    padding: 10px;
+    margin-right: 1rem;
+}
+
+.itemGrow{
+    background-color: aqua;
+    height: 60px;
+    padding: 10px;
+
+}
+.item7, .item8, .item9{
+    width: 50px;
+    height: 50px;
+}
+
+.section12{
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+
+.section12{
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    /* Avec flex direction column, les propriétés de positionnement horizontal et vertical sont inversées justify-contecht : positionnement vertical alig-items : positionnement horizontal */
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.section13{
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+    display: flex;
+    column-gap: 10px;
+    flex-direction: row-reverse;
+}
+
+/* flex-grow permet de définir la largeur de chaque élément proportionnnelent à la largeur de l'élement parent */
+.item4{ flex-grow: 1;
+    /* order, permet de définir la position, l'ordre des éléments, utile en RWD (Responsive Web Disigner), pour ordonner différement les éléments selon les différents supports, tablette, smartphone etc... */
+order: 3;}
+.item5{ flex-grow: 2;}
+.item6{ flex-grow: 1;}
+
+.item3{
+    margin-right: 0;
+}

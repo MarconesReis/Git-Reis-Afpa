@@ -1,0 +1,33 @@
+body{
+    background: black;
+}
+
+.container{
+    background: white;
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gauche{
+    background: aquamarine;
+    width: 50%;
+    height: 630px;
+}
+.droite{
+    background: violet;
+    width: 50%;
+}
+.bas{
+    background: yellow;
+    height: 70px;
+}
+
+.title{
+    margin-top: 0;
+}

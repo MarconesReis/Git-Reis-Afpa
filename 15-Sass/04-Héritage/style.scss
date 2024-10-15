@@ -1,0 +1,17 @@
+%text_box{
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 5px solid #ddd;
+    box-sizing: border-box; /*ça remet les bordures à l'intériéure de la boite*/
+}
+
+.info{
+    @extend &text_box;
+    background-color: lightblue;
+}
+
+.warning{
+    @extend &ext_box;
+    background-color: lightcoral;
+}

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*@function permet de déclarer une fonciton en scss $nb est une variable de réception que nous définissson, elle redptionne un argument. Une fonction rtournde toujours quelsue chse, @return est une instruction permenttant de retouner le résultat de lafonciton Lorqsue nous traillons dans une foncitonn nous sommes dans un espace local, tou le reste à l'exéreur de la fonction , nous somme dasn un espace glooblal Toute les variables déclarées dans une fonction, sont acessible uniqument dans lafoncion */
+.title_h1 {
+  color: #008374;
+}
+
+.paragraph {
+  background-color: rgb(154, 241, 30);
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: #003150;
+  margin-bottom: 20px;
+}
+
+.block2 {
+  width: 200px;
+  height: 200px;
+  background-color: #50bcff;
+}/*# sourceMappingURL=style.css.map */

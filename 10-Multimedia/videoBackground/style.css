@@ -1,0 +1,36 @@
+@import url(../../02-Selecteurs-heritage/02-heritage/reset.css);
+
+html, body{
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.title_h1{
+    font-size: 72px;
+    color: red;
+}
+.video_background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: url(../assets/videoBackground.jpg)
+    no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.container{
+    width: 1400px;
+    margin-left: 50px;
+    background: rgba(255, 192, 203, 0.541);
+    border-radius: 25px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.paragraphg{
+    font-size: 30px;
+    padding: 25px;
+
+}

@@ -1,0 +1,52 @@
+$main-color: #005183;
+$max-content-width: 1440;
+
+// darken( est une foction prédfinie pemettnat de rendre un ecouleur plus foncée d'un certain montantexprimé en pourcentage.
+$dark-main-color: darken(#005183, 10%);
+$light-main-color: lighten(#005183, 40%);
+
+// random est une fonction prédéfinie permetant qui retoune un dhiffre aléatoire entre un minimum de 1 et un maximum XX.
+$random-color: rgb(random(255), random(255), random(255));
+
+
+// margin-bottom: fois2(10)+px;
+// 
+
+/*@function permet de déclarer une fonciton en scss $nb est une variable de réception que nous définissson, elle redptionne un argument. Une fonction rtournde toujours quelsue chse, @return est une instruction permenttant de retouner le résultat de lafonciton Lorqsue nous traillons dans une foncitonn nous sommes dans un espace local, tou le reste à l'exéreur de la fonction , nous somme dasn un espace glooblal Toute les variables déclarées dans une fonction, sont acessible uniqument dans lafoncion */
+@function fois2($nb){
+
+    // 10 * 2 = 20
+    $resultat: $nb * 2;
+    @return $resultat;
+}
+
+// adjust-color est une fnction prédéfinie dans le code sass, qui permet d'ajuster une couleur de base etn modifiant certaains de ces composants.
+// adjust-color(couleur, $red: nombre, $green: nombr, $blue: nombre, $alpha: nombre)
+$secondary-color: adjust-color(#005183,
+$green: 50, $blue: -15);
+
+.title_h1{
+    color: $secondary-color;
+}
+
+.paragraph{
+    background-color: $random-color;
+}
+
+
+//  round() est une fnction prédéfinie qui pemet d'arrondir un nombre démale  l'entier le plus proche.
+.block{
+    width: 200px;
+    height: 200px;
+    background-color: $dark-main-color;
+    // 1440/100 = 14.4 il vas arrodir pour le plus proche, donc 14px
+    // margin-bottom: round($max-content-width/100)+px;
+    margin-bottom: fois2(10)+px;
+}
+
+
+.block2{
+    width: 200px;
+    height: 200px;
+    background-color: $light-main-color;
+}

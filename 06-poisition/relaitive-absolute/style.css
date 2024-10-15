@@ -1,0 +1,83 @@
+@import url(../../02-Selecteurs-heritage/02-heritage/reset.css);
+
+.carre_bleu {
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+    background: lightblue;
+    position: relative; /* l'élement vas se déplacer par rapport à sa poistion d'origine, top / button / left /right */
+}
+
+/* 
+    La position absolute permet de sortir un élément du flux afin de pouvoir le positionner un peu comme on le veut par rapport à un élément parent qui lui va être en position relative,  on va positionner un élément par rapport à un autre
+
+    En position absolute, le carré rouge rouge sort du flux et n'est plus un élément type 'block'
+
+    Si nous mettons un élément en position 'absloute', il faut absolument que son parent soit en position 'relative', de ce fait, nous allons pouvoir positionner le carré rouge par rapport au carré bleu
+*/
+
+.carre_rouge {
+    width: 100px;
+    height: 100px;
+    background: lightcoral;
+    position: absolute; /* top / button / left /right */
+    top: -50px;
+    right: -5Opx;
+    z-index: -1;
+}
+
+img{
+    width: 500px;
+    height: 500px;
+}
+
+.container {
+    width: 500px;
+
+    margin: 0 auto;
+
+}
+
+.picture_item {
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.link_picture{
+    position: relative;
+}
+
+.icone{
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    top: calc(50% - (80px / 2));
+    left: calc(50% - (80px / 2));
+    opacity: 0;
+    /* permet de centrer horizontalment et verticalment dans le bloc */
+    transform: translate( -50% 50%);
+    transition: opacity 0.5s all;
+}
+
+.link_picture:hover .icone{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+Pour un élément en absolute, il faut considérer que : si sont parent a la position relative, l'élément child en absolut, auras ses positions en reference au parent. Si le parent, n'a pas la position relative, l'élément child avec poistion absolut, auras sa position relative de façon automatique par rapport au body
+*/

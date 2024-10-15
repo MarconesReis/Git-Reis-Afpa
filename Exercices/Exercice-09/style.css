@@ -1,0 +1,57 @@
+.container{
+    width: 1200px;
+}
+.menu{
+    background-color: violet;
+    height: 80px;
+}
+.menu_navigation{
+    background-color: yellow;
+    height: 35px;
+}
+.word{
+    color: white;
+}
+.letter{
+    color: white;
+}
+.section_up, .section_down{
+    display: flex;
+}
+.square_up_left, .square_up_right, .square_down_left, .square_down_right{
+    height: 250px;
+    width: 300px;
+}
+.quadrilateral_up, .quadrilateral_down{
+    height: 250px;
+    width: 600px;
+}
+.middle{
+    width: 1200px;
+    height: 250px;
+}
+.square_up_left{
+    background: red;
+}
+.quadrilateral_up{
+    background: blue;
+}
+.square_up_right{
+    background: green;
+}
+.middle{
+    background: pink;
+}
+.square_down_left{
+    background: purple;
+}
+.quadrilateral_down{
+    background: brown;
+}
+.square_down_right{
+    background: gray;
+}
+.footer_container{
+    background: red;
+    height: 65px;
+}

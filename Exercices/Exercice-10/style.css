@@ -1,0 +1,56 @@
+.container{
+    width: 1200px;
+}
+
+.menu{
+    background: red;
+    height: 80px;
+}
+.word, .letters{
+    color: white;
+}
+.navigation{
+    background: blue;
+    height: 30px;
+}.menu, .navigation, .footer_container, .squares{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.container_exterior{
+    background: pink;
+}
+.container_interior{
+    width: 1160px;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+.up, .down{
+    display: flex;
+}
+.squares{
+    border: solid 2px white; 
+    box-sizing: border-box; /* box-sizing: border-box, est la solution au problème créer après la rajout de "border: solid 2px white */
+    width: 290px;
+    height: 200px;  
+}
+.left_up, .right_up, .left_down, .right_down{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}
+.left_up{
+    background: red;
+}
+.right_up{
+    background: yellow;
+}
+.left_down{
+    background: green;
+}
+.right_down{
+    background: brown;
+}
+.footer_container{
+    background: green;
+    height: 60px;
+}
