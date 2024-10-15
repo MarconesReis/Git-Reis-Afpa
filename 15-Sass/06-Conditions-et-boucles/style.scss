@@ -21,6 +21,9 @@ $animals: lion, ours, chameau;
     }
 }
 
+/*La boucle @each permet de passer en revu le contenu de la variable $animals (qui conteient les 3 valeurs lion, chameau et ours $aimal est une  variable de réception qui content pour chaque ttour de oucle une valeur d'un animal*.{$animal} : interpolation de la variable $animal aui permet de sortir det d'afficher la valeur contenu dans animal pour chaque trtou de bouclek on génère les propriètés CSS, dont l'URL  du background pour  chaque block
+/ 
+
 /*
 Les boucles permet de rpéter une acction en fonction d'une condition. DAns les parenthèses  de la boucle @while, nous exprimons une condition. Dans les parenthèses de lab boucle @while, nous exprimons une conditions. Tant que la valeur de lavariable $margin est strictemnet inféreur à 20 ($width/50), tant que cette condtition retoune TRUE, qu'elle est vrai, la boucle continue de tourner, entre les accolades, ce sont lesinstuctions données à la boucl, dici on incrémnent ( on ajoutte +1) à la varable $margin pour chaque tour de boudle
 */ 
@@ -32,6 +35,26 @@ Les boucles permet de rpéter une acction en fonction d'une condition. DAns les 
     $margin: $margin + 1;
 }
 
+@mixin theme($light-theme: true) {
+    @if($light-theme) {
+        color: $dark;
+        background-color: $light;
+    } @else {
+        color: $light;
+        background-color: $dark;
+    }
+}
+
+
+/*
+Nous déclarrons la condition IF à l'intéreeur des parenthèses, si la condition est VRAI, qu'elle retounrne TRUE, c'est le code entre les accolades qui sera executé. Si la condition IF retourne FALSE, qu'elle n'est pas vérifiée, nous entrons automatiquement dans le cas par défaut @else (qui n'est pas obigatoire)
+*/ 
 body{
+    @include theme($light-theme: true);
+
+    span{
+        @include theme($light-theme: false);
+    }
+
     margin: $margin+px;
 }

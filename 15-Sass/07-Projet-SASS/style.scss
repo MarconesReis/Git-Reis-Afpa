@@ -1,0 +1,178 @@
+@import url(reset.css);
+
+$max_content_width: 80%;
+$max_logo_width: 100px;
+
+$main-color: lightblue;
+$white-color:#ffff;
+$text-primary-color: #000;
+$background-nav: #ddd;
+
+$spacing-xs: 0.5rem;
+$spacing-sm: 0.75rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+
+$font-size-xs: 0.5rem;
+$font-size-sm: 0.75rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.5rem;
+$font-size-xl: 2rem;
+
+
+/*
+Opérateur   Défintinition
+==          permet de tester l'égalité sur les valeurs
+!=          permet de tester le différence des valeurs
+<           permet de tester si une valeur est strictement inférieure à une autre
+>           permet de tester si une valeur est strictement supérieure à une autre
+<=          permet de tester si une valeur est strictement inférieure ou égale à un autre
+>=          permtn de tester si une valeur est strictement supérieure ou égale à aun autre    
+*/ 
+@mixin display($display, $column, $dierction, $justifyContent, $alignItems, $gap){
+    @if($display == grid) { 
+        display: $display;
+        grid-template-columns: $column;
+    } @else if($display == flex) {
+        display: $display;
+        flex-direction: $dierction;
+        justify-content: $justifyContent;
+        align-items: $alignItems;
+    }
+
+    @if($gap) {
+        gap: $gap;
+    }
+}
+
+@function calculate-width($col){
+    @return 100% / $col;
+}
+
+%link{
+    text-decoration: none;
+    color: $text-primary-color;
+    padding: $spacing-sm;
+    border-radius: 0.25rem;
+}
+
+%title{
+    font-size: $font_size-xl;
+    letter-spacing: $spacing-xs;
+}
+
+
+body{
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container{
+    width: $max_content_width;
+    margin: 0 auto;
+}
+
+.header{
+    @include display(flex, false, row, space-between, center, false);
+    background-color: $main-color;
+    padding: $spacing-md;
+}
+
+.header_logo{
+    width: $max_logo_width;
+}
+
+.title_h1{
+    @extend %title;
+    color: $white-color;
+}
+
+.nav{
+    background-color: $background-nav;
+}
+
+.nav_list{
+    background-color: #ddd
+}
+
+.nav_list{
+    @include display(flex, false, row, space-around, center, false);
+    padding: $spacing-md;
+
+    .nav_link{
+        @extend %link;
+
+        &:hover{
+            background-color: #000;
+            color: $white-color;
+        }
+    }
+   
+}
+
+.main{
+    padding: $spacing-md;
+
+    .title_h2{
+        @extend %title;
+        text-align: center;
+    }
+}
+
+.presentation_p{
+    margin: $spacing-lg 0;
+    text-align: center;
+}
+
+.actuality{
+    margin-top: $spacing-lg;
+
+    @include display(grid, repeat(3, 1fr), false, false, false, $spacing-md)
+}
+
+.actuality_card{
+    border-radius: 0.5rem;
+    -webkit-box-shadow: -5px 4px 8px 3px #000000; 
+    box-shadow: -5px 4px 8px 3px #000000;
+
+    .actuality_picture{
+        width: 100%;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+}
+
+.actuality_content{
+    @include display(flex, false, column, center, flex-start, false);
+    padding:  $spacing-md;
+
+    .actuality_title{
+        font-size: $font-size-lg;
+        margin-bottom: $spacing-sm;
+    }
+
+    .actuality_link{
+        @extend %link;
+        color: $white-color;
+        background-color: #000000;
+    }
+}
+
+.footer{
+    @include display(flex, false, row, false, false, false);
+    min-height: 250px;
+    background-color: $main-color;
+
+    .footer_content{
+        width: calculate-width(3);
+        padding: $spacing-md;
+    }
+
+    .footer_logo{
+        width: $max_logo_width;
+    }
+}
+
+.footer_informations{
+    @include display(flex, false, column, space-between, flex-start, false)
+}
